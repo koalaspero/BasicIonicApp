@@ -1,0 +1,6 @@
+{
+	"appId": "com.koala.app",
+	"appName": "ActualTutorial",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/pages"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-input type="text" placeholder="Name" #name></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Image Source" #link></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-textarea placeholder="Enter more information here..." #text></ion-textarea>
+          </ion-item>
+          <ion-button color="success" (click)="saveNewPage(name,link,text)">Submit</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
